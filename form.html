@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            border: none;
+            position: relative;
+            width: 100%;
+            z-index: 0;
+            height: 100px;
+
+        }
+        .name-label{
+            border-bottom: 2px solid red;
+            position: absolute;
+            top: 10;
+            left: 20;
+            z-index: 1;
+            width:80%;
+        }
+        .name-label ~ :focus
+        .name-label ~ :valid
+        {
+            border-bottom: 2px solid blue;
+            
+        }
+        input:focus{
+            border: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <label for="" class="name-label">name</label>
+    <input class="name"type="text">
+</body>
+</html>
